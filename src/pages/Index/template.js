@@ -22,7 +22,7 @@ export default {
 
 	methods: {
 		onPageChange(newPage) {
-			console.log(newPage)
+			console.log('newPage', newPage)
 			blog.getIndexBlogs({ page: newPage }).then(res => {
 				console.log(res)
 				this.blogs = res.data
